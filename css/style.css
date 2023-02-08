@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Regole debug*/
+.debug main{
+    background-color: #141922;
+}
+.debug footer{
+    background-color: #282828;
+}
+
+/* Utility*/
+main{
+    height: calc(100vh - 100px);
+}
+footer{
+    height: 100px;
+}
+/* Responsive*/
+
