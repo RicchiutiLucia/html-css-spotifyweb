@@ -11,6 +11,12 @@
 .debug footer{
     background-color: #282828;
 }
+.debug .sidebar{
+    background-color: black;
+}
+.debug .content{
+    background-color: #141922;
+}
 
 /* Utility*/
 main{
@@ -18,6 +24,15 @@ main{
 }
 footer{
     height: 100px;
+}
+.d-flex{
+    display: flex;
+}
+aside{
+    width: 50px;
+}
+.content{
+    width: calc(100% - 50px);
 }
 /* Responsive*/
 
