@@ -20,12 +20,11 @@ html{
 .debug .content{
     background-color: #141922;
 }
-
 .debug .cover-list{
     border: dashed 2px white;
 }
 .debug .cover-container{
-    background-color:plum;
+    background-color: plum;
     height: 200px;
 }
 
@@ -46,8 +45,9 @@ footer{
     color: white;
 }
 .text-grey{
-    color: #777a7e;
+    color: #797c80;
 }
+
 .overflow-scroll {
     overflow-y: scroll;
 }
@@ -102,9 +102,7 @@ aside{
     margin-top: 5px;
     margin-bottom: 5px;
 }
-
 .navbar a {
-    color: grey;
     text-decoration: none;
 }
 
@@ -128,6 +126,7 @@ aside{
         margin-top: 5px;
         margin-bottom: 5px;
     }
+    
     
 }
 @media screen and (min-width: 768px) {
