@@ -21,10 +21,17 @@
     background-color: aqua;
     height: 50px;
 }
+.debug .cover-list{
+    border: dashed 2px white;
+}
+.debug .cover-container{
+    background-color:plum;
+    height: 200px;
+}
 
 /* Utility*/
 main{
-    height: calc(100vh - 100px);
+    height:calc(100vh - 100px);
 }
 footer{
     height: 100px;
@@ -32,11 +39,30 @@ footer{
 .d-flex{
     display: flex;
 }
+.wrap{
+    flex-wrap: wrap;
+}
+.text-white{
+    color: white;
+}
+.text-grey{
+    color: #777a7e;
+}
+.overflow-scroll {
+    overflow-y: scroll;
+}
 aside{
     width: 50px;
 }
 .content{
     width: calc(100% - 50px);
+}
+.cover-list{
+    list-style: none;
+}
+.cover-item{
+    width: 50%;
+    padding: 20px;
 }
 /* Responsive*/
 
