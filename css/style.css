@@ -17,6 +17,10 @@
 .debug .content{
     background-color: #141922;
 }
+.debug .content-nav{
+    background-color: aqua;
+    height: 50px;
+}
 
 /* Utility*/
 main{
