@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    font-family: 'Open Sans', sans-serif;
+}
 
 /* Regole debug*/
 .debug main{
@@ -76,6 +79,18 @@ aside{
     text-align: right;
     line-height: 70px;
 }
+#cta a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+}
+.btn {
+    border-radius: 20rem;
+    border: 1px solid white;
+    padding: .5rem 2rem;
+    margin-right: 1.5rem;
+}
+
 /* Responsive*/
 @media screen and (min-width: 576px) {
     .sidebar{
