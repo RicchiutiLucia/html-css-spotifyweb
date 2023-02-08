@@ -57,6 +57,9 @@ aside{
 .content{
     width: calc(100% - 50px);
 }
+.content-nav{
+    margin-top: 80px;
+}
 .cover-list{
     list-style: none;
 }
@@ -64,5 +67,15 @@ aside{
     width: 50%;
     padding: 20px;
 }
+#cta{
+    position: fixed;
+    left:50px;
+    height: 70px;
+    background-color: rgba(8,11,18,0.5);
+    width: calc(100% - 50px);
+    text-align: right;
+    line-height: 70px;
+}
 /* Responsive*/
+
 
