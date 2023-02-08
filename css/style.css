@@ -77,5 +77,30 @@ aside{
     line-height: 70px;
 }
 /* Responsive*/
+@media screen and (min-width: 576px) {
+    .sidebar{
+        width: 200px;
+    }
+    .content{
+        width: calc(100% - 200px);
+    }
+    #cta{
+        width:calc(100% - 200px);
+        left: 200px;
+    }
+    
+}
+@media screen and (min-width: 768px) {
+    .cover-item{
+        width: 25%;
+    }
+    
+}
+@media screen and (min-width: 992px) {
+    .cover-item{
+        width: calc(100% / 6);
+    }
+    
+}
 
 
