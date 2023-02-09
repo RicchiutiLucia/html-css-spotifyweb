@@ -7,15 +7,6 @@ html{
     font-family: 'Open Sans', sans-serif;
 }
 
-/* Regole debug*/
-.debug .content{
-    background-color: #141922;
-}
-.debug .cover-container{
-    background-color: plum;
-    height: 200px;
-}
-
 /* Utility*/
 main{
     background-color: #141922;
@@ -58,6 +49,7 @@ aside{
 }
 .sidebar-bottom{
     height: 100px;
+    
 }
 .sidebar-top{
     height: calc(100% - 100px);
@@ -65,6 +57,7 @@ aside{
     display: flex;
     flex-direction: column;
 }
+
 .sidebar .playlist-main{
     display: none;
 }
@@ -86,6 +79,7 @@ aside{
 
 .content{
     width: calc(100% - 50px);
+    background-color: #141922;
 }
 .content-nav{
     margin-top: 80px;
@@ -94,8 +88,8 @@ aside{
     list-style: none;
 }
 .cover-item{
-    width: 50%;
-    padding: 20px;
+    width:50%;
+    padding: 5px;
 }
 #cta{
     position: fixed;
@@ -172,6 +166,44 @@ hr {
     font-size: 14px;
     vertical-align: middle;
 }
+#created-for{
+    padding: 20px;
+}
+#recently-player{
+    padding: 20px;
+}
+#popular{
+    padding: 20px;
+}
+.card img {
+    width: 100%;
+}
+.card-img {
+    position: relative;
+}
+.hide{
+    display: none;
+}
+.card{
+    width:100%;
+    text-align: center;
+}
+.genere h4 {
+    font-weight: bolder;
+    font-size: 13px;
+}
+.sub {
+    color: grey;
+    font-size: 0.5rem;
+}
+.descript {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.autors {
+    clip-path: circle();
+}
+
 
 /*footer*/
 footer{
@@ -430,6 +462,11 @@ footer{
         height: 2px;
         border-radius: 5px;
         background-color: #BBB9BD; 
+    }
+    .logo-small {
+        margin: 0.5rem 0;
+        display: block;
+        width: 120px;
     }
     
 }
