@@ -8,15 +8,6 @@ html{
 }
 
 /* Regole debug*/
-.debug main{
-    background-color: #141922;
-}
-.debug footer{
-    background-color: #282828;
-}
-.debug .sidebar{
-    background-color: black;
-}
 .debug .content{
     background-color: #141922;
 }
@@ -30,9 +21,12 @@ html{
 
 /* Utility*/
 main{
+    background-color: #141922;
     height:calc(100vh - 100px);
+    overflow-y: hidden;
 }
 footer{
+    background-color: #282828;
     height: 100px;
 }
 .d-flex{
@@ -55,12 +49,47 @@ aside{
     width: 50px;
 }
 .logo{
-    width:65%;
-    margin: 0.5rem;
+    height: 30px;
+    margin: 0.5rem 0;
+
 }
 .logo-small {
     display: none;
 }
+.sidebar{
+    background-color: black;
+    min-height: 400px;
+    overflow-y: hidden;
+    padding: 10px;
+}
+.sidebar-bottom{
+    height: 100px;
+}
+.sidebar-top{
+    height: calc(100% - 100px);
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.sidebar .playlist-main{
+    display: none;
+}
+.nav-main img{
+    height: 25px;
+    vertical-align: middle;
+}
+.nav-main .label{
+    vertical-align: middle;
+    display: none;
+}
+.nav-main a{
+    text-decoration: none;
+    display: inline-block;
+}
+#select{
+    color: white;
+}
+
 .content{
     width: calc(100% - 50px);
 }
@@ -112,6 +141,46 @@ aside{
 .navbar a {
     text-decoration: none;
 }
+.none {
+    display: none;
+}
+.sidebar .sidebar-bottom {
+    margin: 0 0.5rem;
+}
+
+hr {
+    margin-bottom: 0.5rem;
+    display: none;
+}
+
+.user i {
+    clip-path: circle();
+    background-color: #BBB9BD;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.installer {
+    margin: 0.5rem 0;
+}
+.installer a{
+    text-decoration: none;
+    font-size: 12px;
+    display: inline-block;
+}
+.installer i{
+    margin-left: 2px;
+}
+
+.user span {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+
+
 
 /* Responsive*/
 @media screen and (min-width: 576px) {
@@ -133,15 +202,88 @@ aside{
         margin-top: 5px;
         margin-bottom: 5px;
     }
+    .sidebar{
+        padding: 20px;
+    }
+    .sidebar .playlist-main{
+        overflow-y: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+    
     .logo {
         display: none;
     }
 
     .logo-small {
+        margin: 0.5rem 0;
         display: block;
         width: 150px;
-        padding: 20px;
     }
+    .nav-main .label{
+        vertical-align: middle;
+        display: inline-block;
+        font-size: 12px;
+    }
+    .playlist-main h3{
+        color: white;
+        font-size: 12px;
+        margin: 1rem 0 0.3rem 0;
+    }
+    .playlist-main a{
+        text-decoration: none;
+        font-size: 12px;
+    }
+    .playlist-main .list-music{
+        margin: 0.5rem 0;
+        line-height: 2rem;
+    }
+    .plus {
+        background-color: grey;
+        font-size: 1rem;
+        font-weight: bold;
+        color: black;
+        padding: 2px 6px;
+        margin-right: 0.2rem;
+    }
+    .sidebar .sidebar-bottom {
+        margin: 0 0.5rem;
+    }
+    
+    hr {
+        margin-bottom: 0.5rem;
+        display: block;
+    }
+    
+    .user i {
+        clip-path: circle();
+        background-color: #BBB9BD;
+        font-size: 20px;
+        vertical-align: middle;
+    }
+    
+    .installer {
+        margin: 0.5rem 0;
+    }
+    .installer a{
+        text-decoration: none;
+        font-size: 12px;
+        display: inline-block;
+    }
+    
+    
+    .user span {
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+        vertical-align: middle;  
+    }
+    .none{
+        display: inline-block;
+    }
+    
+    
+   
     
 }
 @media screen and (min-width: 768px) {
