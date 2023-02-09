@@ -11,9 +11,6 @@ html{
 .debug .content{
     background-color: #141922;
 }
-.debug .cover-list{
-    border: dashed 2px white;
-}
 .debug .cover-container{
     background-color: plum;
     height: 200px;
@@ -25,10 +22,7 @@ main{
     height:calc(100vh - 100px);
     overflow-y: hidden;
 }
-footer{
-    background-color: #282828;
-    height: 100px;
-}
+
 .d-flex{
     display: flex;
 }
@@ -179,8 +173,31 @@ hr {
     vertical-align: middle;
 }
 
-
-
+/*footer*/
+footer{
+    background-color: #282828;
+    height: 100px;
+    overflow: hidden;
+}
+.player {
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;   
+}
+/* style left */
+.left-part {
+    align-items: center;
+    width: 20%;
+    font-size: 0.5rem;
+    flex-grow: 1;
+}
+.album-cover {
+    width: 3.8rem;
+    padding: 0.8rem;
+}
+.album-cover img {
+    width: 100%;
+}
 
 /* Responsive*/
 @media screen and (min-width: 576px) {
@@ -270,8 +287,6 @@ hr {
         font-size: 12px;
         display: inline-block;
     }
-    
-    
     .user span {
         color: white;
         font-weight: bold;
