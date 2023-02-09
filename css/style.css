@@ -54,6 +54,13 @@ footer{
 aside{
     width: 50px;
 }
+.logo{
+    width:65%;
+    margin: 0.5rem;
+}
+.logo-small {
+    display: none;
+}
 .content{
     width: calc(100% - 50px);
 }
@@ -126,7 +133,15 @@ aside{
         margin-top: 5px;
         margin-bottom: 5px;
     }
-    
+    .logo {
+        display: none;
+    }
+
+    .logo-small {
+        display: block;
+        width: 150px;
+        padding: 20px;
+    }
     
 }
 @media screen and (min-width: 768px) {
