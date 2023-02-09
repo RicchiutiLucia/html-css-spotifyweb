@@ -198,6 +198,15 @@ footer{
 .album-cover img {
     width: 100%;
 }
+.artist {
+    padding: 0.1rem;
+}
+.song-icons {
+    padding: 0.5rem;
+}
+.song-icon {
+    padding: .3rem;
+}
 
 /* Responsive*/
 @media screen and (min-width: 576px) {
