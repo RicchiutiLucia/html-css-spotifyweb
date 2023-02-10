@@ -49,6 +49,8 @@ aside{
 }
 .sidebar-bottom{
     height: 100px;
+    justify-content: flex-end;
+    flex-direction: column;
     
 }
 .sidebar-top{
@@ -150,21 +152,20 @@ hr {
 
 .installer {
     margin: 0.5rem 0;
+
 }
 .installer a{
     text-decoration: none;
     font-size: 12px;
-    display: inline-block;
 }
 .installer i{
-    margin-left: 2px;
+    padding-right: 5px;
 }
-
 .user span {
     color: white;
     font-weight: bold;
-    font-size: 14px;
     vertical-align: middle;
+    padding: 0 5px;
 }
 #created-for{
     padding: 20px;
@@ -210,6 +211,7 @@ footer{
     background-color: #282828;
     height: 70px;
     overflow: hidden;
+    padding: 0px 10px;
 }
 .player {
     align-items: center;
@@ -233,8 +235,15 @@ footer{
 .artist {
     padding: 0.1rem;
 }
+.artist-name{
+    font-size: 14px;
+}
+.song-name{
+    font-size: 12px;
+}
 .song-icons {
     padding: 0.5rem;
+    font-size: 11px;
 }
 .song-icon {
     padding: .3rem;
@@ -271,33 +280,46 @@ footer{
     font-weight: bold;
 }
 .time-bar{
-    width: 100%;
-    margin: auto 10px;
-    height: 2px;
-    border-radius: 5px;
+    height: 10px;
     background-color:#797c80;
+    border-radius: 5px;
 }
+.time-bar .time-bar-partial{
+    width: 20%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: white;
+    position: relative;
+}
+.time-start , .time-end{
+    width: 10%;
+    text-align: center;
+    line-height: 5px;
+}
+.time-bar-progress{
+    width: 80%;
+}
+.time-bar .time-current{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: -3px;
+    display: none;
+}
+.time-bar:hover .time-bar-partial{
+    background-color: lightgreen;
+}
+.time-bar:hover .time-current{
+    display: block;
+}
+
 /* footer right */
 .right-part {
     width:calc(100% / 3);
     justify-content: end;
-}
-.time-bar-right {
-    width: 50px;
-    height: 2px;
-    border-radius: 5px;
-    background-color: #797c80;
-    min-width: 0;
-    margin-right: 10px;
-    margin-left: 10px;
-    
-}
-.time-bar-partial{
-    width: 40px;
-    margin: 0;
-    height: 2px;
-    border-radius: 5px;
-    background-color: #BBB9BD; 
 }
 .right-part{
     align-items: center;
@@ -305,7 +327,7 @@ footer{
     flex-grow: 1;
 }
 .right-part li{
-    width: 20px;
+    width: 50px;
 }
 .right-part ul{
     list-style: none;
@@ -314,6 +336,37 @@ footer{
 .right-part i{
     padding: 10px;
     font-size: 10px;
+}
+.time-bar-right{
+    height: 10px;
+    background-color:#797c80;
+    border-radius: 5px;
+}
+.right-part .time-bar-progress-right{
+    width: 20%;
+}
+.time-bar-right .time-bar-partial{
+    width: 40%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: white;
+    position: relative;
+}
+.time-bar-right .time-current{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: -3px;
+    display: none;
+}
+.time-bar-right:hover .time-bar-partial{
+    background-color: lightgreen;
+}
+.time-bar-right:hover .time-current{
+    display: block;
 }
 .volume{
     vertical-align: middle;
@@ -445,23 +498,6 @@ footer{
     }
     .song-icons {
         flex-direction: row;
-    }
-    .time-bar-right {
-        width: 80px;
-        height: 2px;
-        border-radius: 5px;
-        background-color: #797c80;
-        min-width: 0;
-        margin-right: 10px;
-        margin-left: 10px;
-        
-    }
-    .time-bar-partial{
-        width: 70px;
-        margin: 0;
-        height: 2px;
-        border-radius: 5px;
-        background-color: #BBB9BD; 
     }
     .logo-small {
         margin: 0.5rem 0;
