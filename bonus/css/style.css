@@ -372,8 +372,8 @@ footer{
     display: none;
 }
 /* Parti bonus*/
-.btn :hover{
-    transform: scale(1.5);
+.content #cta a:hover {
+    font-size: 16px;
 }
 .artist :hover{
     color: white;
@@ -544,5 +544,8 @@ footer{
     }
     
 }
+
+
+
 
 
