@@ -372,7 +372,9 @@ footer{
     display: none;
 }
 /* Parti bonus*/
-
+.btn :hover{
+    transform: scale(1.5);
+}
 
 .sidebar :hover{
     color: white;
