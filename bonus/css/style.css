@@ -309,12 +309,7 @@ footer{
     top: -3px;
     display: none;
 }
-.time-bar:hover .time-bar-partial{
-    background-color: lightgreen;
-}
-.time-bar:hover .time-current{
-    display: block;
-}
+
 
 /* footer right */
 .right-part {
@@ -361,6 +356,19 @@ footer{
     right: 0;
     top: -3px;
     display: none;
+}
+/* Parti bonus*/
+.sidebar:hover{
+    color: red;
+}
+.btn:hover{
+    transform: scale(1.5);
+}
+.time-bar:hover .time-bar-partial{
+    background-color: lightgreen;
+}
+.time-bar:hover .time-current{
+    display: block;
 }
 .time-bar-right:hover .time-bar-partial{
     background-color: lightgreen;
