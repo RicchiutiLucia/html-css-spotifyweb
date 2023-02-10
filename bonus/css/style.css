@@ -132,7 +132,7 @@ aside{
     text-decoration: none;
 }
 .nav-main ul li:first-child {
-    border-left: 3px solid #adff2f;
+  border-left: 3px solid #adff2f;
 }
 .border{
     width: 25px;
@@ -375,8 +375,17 @@ footer{
 .btn :hover{
     transform: scale(1.5);
 }
-.song-icon:hover{
-    color: lightslategray;
+.artist :hover{
+    color: white;
+}
+.song-icon :hover{
+    color: white;
+}
+.player-top i:hover{
+    color: #797c80;
+}
+.right-part i:hover{
+    color: #797c80;
 }
 .sidebar :hover{
     color: white;
@@ -510,9 +519,6 @@ footer{
     .artist .song-name{
         display: inline-block;
     }
-    
-    
-   
     
 }
 @media screen and (min-width: 768px) {

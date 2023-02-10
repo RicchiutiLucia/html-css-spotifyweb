@@ -375,8 +375,17 @@ footer{
 .btn :hover{
     transform: scale(1.5);
 }
-.song-icon:hover{
-    color: lightslategray;
+.artist :hover{
+    color: white;
+}
+.song-icon :hover{
+    color: white;
+}
+.player-top i:hover{
+    color: #797c80;
+}
+.right-part i:hover{
+    color: #797c80;
 }
 .sidebar :hover{
     color: white;
