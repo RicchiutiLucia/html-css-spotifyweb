@@ -417,6 +417,15 @@ footer{
     left: 35%;
 }
 /* Responsive*/
+@media screen and (max-height:300px){
+    #cta{
+        display: none;
+    }
+
+    .content-nav{
+        margin-top: 0;
+    }
+}
 @media screen and (min-width: 576px) {
     .sidebar{
         width: 200px;
