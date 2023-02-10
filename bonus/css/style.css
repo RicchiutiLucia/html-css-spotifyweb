@@ -131,6 +131,16 @@ aside{
 .navbar a {
     text-decoration: none;
 }
+.border{
+    width: 25px;
+    height: 2px;
+    background-color:#797c80;
+    text-align: center;
+    position: relative;
+    top:50%;
+    left: 30px;
+    background-color:#adff2f;
+}
 .none {
     display: none;
 }
@@ -359,7 +369,12 @@ footer{
     display: none;
 }
 /* Parti bonus*/
+
+
 .sidebar :hover{
+    color: white;
+}
+.navbar a:hover {
     color: white;
 }
 .time-bar:hover .time-bar-partial{

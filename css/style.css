@@ -131,6 +131,16 @@ aside{
 .navbar a {
     text-decoration: none;
 }
+.border{
+    width: 25px;
+    height: 2px;
+    background-color:#797c80;
+    text-align: center;
+    position: relative;
+    top:50%;
+    left: 30px;
+    background-color:#adff2f;
+}
 .none {
     display: none;
 }
@@ -184,6 +194,7 @@ hr {
 }
 .hide{
     display: none;
+    color: white;
 }
 .card{
     width:100%;
@@ -309,12 +320,7 @@ footer{
     top: -3px;
     display: none;
 }
-.time-bar:hover .time-bar-partial{
-    background-color: lightgreen;
-}
-.time-bar:hover .time-current{
-    display: block;
-}
+
 
 /* footer right */
 .right-part {
@@ -362,11 +368,37 @@ footer{
     top: -3px;
     display: none;
 }
+/* Parti bonus*/
+
+
+.sidebar :hover{
+    color: white;
+}
+.navbar a:hover {
+    color: white;
+}
+.time-bar:hover .time-bar-partial{
+    background-color: lightgreen;
+}
+.time-bar:hover .time-current{
+    display: block;
+}
 .time-bar-right:hover .time-bar-partial{
     background-color: lightgreen;
 }
 .time-bar-right:hover .time-current{
     display: block;
+}
+.card img:hover{
+    background-color: #171923;
+    opacity: 0.5;
+    position: relative;
+}
+.card-img img:hover + .hide{
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 35%;
 }
 /* Responsive*/
 @media screen and (min-width: 576px) {
@@ -471,9 +503,6 @@ footer{
     .artist .song-name{
         display: inline-block;
     }
-    
-    
-   
     
 }
 @media screen and (min-width: 768px) {
