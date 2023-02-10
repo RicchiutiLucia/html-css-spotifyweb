@@ -375,6 +375,9 @@ footer{
 .btn :hover{
     transform: scale(1.5);
 }
+.song-icon:hover{
+    color: lightslategray;
+}
 .sidebar :hover{
     color: white;
 }
