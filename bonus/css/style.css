@@ -416,7 +416,7 @@ footer{
     top: 30%;
     left: 35%;
 }
-/* Responsive*/
+/* Bonus*/
 @media screen and (max-height:300px){
     #cta{
         display: none;
@@ -426,6 +426,13 @@ footer{
         margin-top: 0;
     }
 }
+@media screen and (max-width:514px){
+    footer .time-bar-progress-right {
+        display: none;
+    }
+
+}
+/* Responsive*/
 @media screen and (min-width: 576px) {
     .sidebar{
         width: 200px;
