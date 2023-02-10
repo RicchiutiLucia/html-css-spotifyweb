@@ -418,6 +418,19 @@ footer{
 }
 
 footer .central-part .time-bar-progress .time-bar-partial{
+    animation: barra 20s infinite linear;
+}
+
+@keyframes barra {
+    0%{
+        width: 0%;
+
+    }
+    100%{
+        width: 100%;
+    }
+}
+footer .right-part .time-bar-progress .time-bar-partial{
     animation: charge 20s infinite linear;
 }
 
