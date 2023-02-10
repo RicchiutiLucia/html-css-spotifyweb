@@ -184,6 +184,7 @@ hr {
 }
 .hide{
     display: none;
+    color: white;
 }
 .card{
     width:100%;
@@ -358,11 +359,8 @@ footer{
     display: none;
 }
 /* Parti bonus*/
-.sidebar:hover{
-    color: red;
-}
-.btn:hover{
-    transform: scale(1.5);
+.sidebar :hover{
+    color: white;
 }
 .time-bar:hover .time-bar-partial{
     background-color: lightgreen;
@@ -375,6 +373,17 @@ footer{
 }
 .time-bar-right:hover .time-current{
     display: block;
+}
+.card img:hover{
+    background-color: #171923;
+    opacity: 0.5;
+    position: relative;
+}
+.card-img img:hover + .hide{
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 35%;
 }
 /* Responsive*/
 @media screen and (min-width: 576px) {
