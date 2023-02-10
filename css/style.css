@@ -416,6 +416,24 @@ footer{
     top: 30%;
     left: 35%;
 }
+
+
+footer .central-part .time-bar-progress .time-bar-partial{
+    animation: charge 20s infinite linear;
+}
+
+
+@keyframes charge{
+    0%{
+        width: 0%;
+
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+
 /* Bonus*/
 @media screen and (max-height:300px){
     #cta{
