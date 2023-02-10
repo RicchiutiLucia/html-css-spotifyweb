@@ -131,6 +131,9 @@ aside{
 .navbar a {
     text-decoration: none;
 }
+.nav-main ul li:first-child {
+  border-left: 3px solid #adff2f;
+}
 .border{
     width: 25px;
     height: 2px;
@@ -369,8 +372,6 @@ footer{
     display: none;
 }
 /* Parti bonus*/
-
-
 .sidebar :hover{
     color: white;
 }
